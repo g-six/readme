@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { AppProps } from 'next/app'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 
 import { Layout } from '@/components/Layout'
@@ -49,7 +48,7 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
   return sections
 }
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =
