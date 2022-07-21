@@ -9,7 +9,7 @@ The Vercel API is a REST-styled API that gives full control over the entire Verc
 
 ## Add a domain to a project
 
-#### POST /vercel/projects/{project_name}/domains
+#### POST /vercel/domains/leagent-app
 
 ```js
 /**
