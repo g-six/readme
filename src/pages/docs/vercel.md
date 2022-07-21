@@ -13,7 +13,6 @@ The Vercel API is a REST-styled API that gives full control over the entire Verc
 
 ```js
 /**
- * @param {string} project_name - The unique name of the Vercel project
  * @param {Object} payload Request payload
  *                  Optional: gitBranch
  */
