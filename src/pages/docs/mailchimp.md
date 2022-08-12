@@ -27,7 +27,7 @@ Additionally, we could specify the reply to:
 
 ## Send an Email Template
 
-#### POST /mailchimp/template/{template_slug}
+#### POST /mailchimp/{template_slug}
 
 ```js
 /**
