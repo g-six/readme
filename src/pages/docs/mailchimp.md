@@ -4,6 +4,24 @@ description: Middleware for email sending
 ---
 
 Send emails via MailChimp / MailChimp Templates
+Generic payload structure below:
+
+```json
+{
+  "email": "buyer@leagent.com",
+  "name": "John Doe"
+}
+```
+
+Additionally, we could specify the reply to:
+
+```json
+{
+  "email": "buyer@leagent.com",
+  "name": "John Doe",
+  "reply_to": "agent@leagent.com"
+}
+```
 
 ---
 
@@ -20,6 +38,8 @@ Send emails via MailChimp / MailChimp Templates
 
 #### Request Payload
 
+**new-card-order**
+
 ```json
 {
   "email": "gerard+PLEASECHANGETHIS@setsail.ca",
@@ -34,5 +54,15 @@ Send emails via MailChimp / MailChimp Templates
       "content": "BASE64_ENCODED_CONTENT_HERE"
     }
   ]
+}
+```
+
+**new-subscriber**
+
+```json
+{
+  "email": "gerard+PLEASECHANGETHIS@setsail.ca",
+  "name": "Rey",
+  "phone": "XXX YYY ZZZZ"
 }
 ```
