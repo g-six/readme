@@ -30,6 +30,7 @@ const navigation = [
     links: [
       { title: 'MailChimp', href: '/docs/mailchimp' },
       { title: 'Search Index', href: '/docs/opensearch' },
+      { title: 'Slack', href: '/docs/slack' },
       { title: 'Vercel', href: '/docs/vercel' },
     ],
   },
