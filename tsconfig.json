@@ -20,5 +20,10 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "src/**/*.tsx", "src/**/*.ts"]
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "markdoc/**/*.tsx"
+  ]
 }
