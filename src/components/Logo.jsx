@@ -17,7 +17,7 @@ export function Logomark(props) {
 
 export function Logo(props) {
   return (
-    <div {...props} className="text-xl font-bold text-white">
+    <div {...props} className="text-xl font-bold dark:text-white">
       ApiArmada
     </div>
   )
