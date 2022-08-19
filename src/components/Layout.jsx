@@ -13,26 +13,26 @@ import classNames from '@/utils/css-helper'
 
 const navigation = [
   {
-    title: 'Introduction',
+    title: 'API reference',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'MailChimp', href: '/docs/api-reference/mailchimp' },
+      { title: 'Search Index', href: '/docs/api-reference/opensearch' },
+      { title: 'Slack', href: '/docs/api-reference/slack' },
+      { title: 'Stripe', href: '/docs/api-reference/stripe' },
+      { title: 'Vercel', href: '/docs/api-reference/vercel' },
+    ],
+  },
+  {
+    title: 'Developers',
+    links: [
+      { title: 'Getting started', href: '/docs/developers/getting-started' },
+      { title: 'Installation', href: '/docs/developers/installation' },
     ],
   },
   {
     title: 'Guides',
     links: [
       { title: 'Domain White-Listing Guide', href: '/docs/white-listing' },
-    ],
-  },
-  {
-    title: 'API reference',
-    links: [
-      { title: 'MailChimp', href: '/docs/mailchimp' },
-      { title: 'Search Index', href: '/docs/opensearch' },
-      { title: 'Slack', href: '/docs/slack' },
-      { title: 'Stripe', href: '/docs/stripe' },
-      { title: 'Vercel', href: '/docs/vercel' },
     ],
   },
   {

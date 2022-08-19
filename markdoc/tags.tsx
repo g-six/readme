@@ -1,4 +1,5 @@
 import { Callout } from '@/components/Callout'
+import { CenterFigure } from '@/components/CenterFigure'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
 const tags = {
@@ -21,13 +22,29 @@ const tags = {
       alt: { type: String },
       caption: { type: String },
     },
-    render: ({ src, alt = '', caption }) => (
+    render: ({
+      src,
+      alt = '',
+      caption,
+    }: {
+      src: string
+      alt?: string
+      caption: string
+    }) => (
       <figure>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={src} alt={alt} />
         <figcaption>{caption}</figcaption>
       </figure>
     ),
+  },
+  centerFigure: {
+    selfClosing: true,
+    attributes: {
+      src: { type: String },
+      caption: { type: String },
+    },
+    render: CenterFigure,
   },
   'quick-links': {
     render: QuickLinks,
