@@ -1,8 +1,9 @@
 import clsx from '@/utils/css-helper'
 
 import { Icon } from '@/components/Icon'
+import { ReactElement } from 'react'
 
-const styles = {
+const styles: Record<'note' | 'warning', Record<string, string>> = {
   note: {
     container:
       'bg-sky-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10',
@@ -17,12 +18,18 @@ const styles = {
   },
 }
 
-const icons = {
-  note: (props) => <Icon icon="lightbulb" {...props} />,
-  warning: (props) => <Icon icon="warning" color="amber" {...props} />,
+const icons: any = {
+  note: (props: any) => <Icon icon="lightbulb" {...props} />,
+  warning: (props: any) => <Icon icon="warning" color="amber" {...props} />,
 }
 
-export function Callout({ type = 'note', title, children }) {
+type CalloutProps = {
+  type: 'note' | 'warning'
+  title: string
+  children: ReactElement
+}
+
+export function Callout({ type = 'note', title, children }: CalloutProps) {
   let IconComponent = icons[type]
 
   return (
