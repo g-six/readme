@@ -26,8 +26,12 @@ export function Button({
   className = clsx(styles[variant], className || '')
 
   return href ? (
-    <Link href={href} className={className} />
+    <Link href={href} className={className}>
+      {props.children}
+    </Link>
   ) : (
-    <button className={className} {...props} />
+    <button className={className} {...props}>
+      {props.children}
+    </button>
   )
 }
