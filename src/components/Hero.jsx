@@ -5,6 +5,7 @@ import Highlight, { defaultProps } from 'prism-react-renderer'
 
 import { Button } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
+import GitHubIcon from '@/components/icons/GitHubIcon'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
 
@@ -76,7 +77,10 @@ export function Hero() {
                   href="https://github.com/g-six/armada"
                   variant="secondary"
                 >
-                  View on GitHub
+                  <span className="flex gap-2">
+                    <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
+                    View on GitHub
+                  </span>
                 </Button>
               </div>
             </div>
